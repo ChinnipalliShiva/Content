@@ -1,0 +1,31 @@
+Summary
+The video provides a step-by-step guide on how to install Apache Kafka on a Windows 11 machine. It covers the necessary steps, including downloading and extracting the Kafka setup, configuring the environment variables, and setting up the Zookeeper and Kafka server. The video also demonstrates how to start the Zookeeper and Kafka server, and how to verify the running services using the JPS command.
+
+Key Points
+Downloading and Extracting Kafka
+[0:14] Download the latest Apache Kafka version (3.7.0) from the official website.
+[0:51] Extract the downloaded Kafka ZIP file to a location on the C drive.
+Configuring Environment Variables
+[1:22] Add a new system variable named "KAFKA_HOME" with the path to the extracted Kafka folder.
+[1:55] Add the "%KAFKA_HOME%\bin" path to the system's PATH variable.
+Configuring Kafka Configuration Files
+[2:11] Open the "zookeeper.properties" file and update the "dataDir" parameter with the actual path to the Zookeeper data directory.
+[3:05] Open the "server.properties" file and update the "log.dirs" parameter with the actual path to the Kafka log directory.
+Starting Zookeeper and Kafka Server
+[3:44] Open a PowerShell window as an administrator and navigate to the Kafka installation directory.
+[4:08] Run the command to start the Zookeeper server.
+[4:35] Run the command to start the Kafka server.
+Verifying the Running Services
+[4:53] Open a third PowerShell window as an administrator and use the "JPS" command to check if the Zookeeper and Kafka servers are running.
+
+
+1.install kafka
+2.extract the folder
+3.add env variables
+4.add path
+5.open terminal
+	5.1 - navigate to the folder and run the zookeeper and use a command to run the zookeeper(in properties file change the tmp path to original file)
+	5.2 - do the above thing for the broker and services
+
+
+link   ---    https://www.youtube.com/watch?v=LX5LKBYHmyU
